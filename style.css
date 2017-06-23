@@ -605,7 +605,7 @@ p {
   float: left;
   width: 90px;
   height: 90px;
-  background: #69c2c8;
+  background: #a1d800 !important;
   color: #fff;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -1216,7 +1216,7 @@ p {
   width: 100%;
   height: 100%;
   z-index: 9999;
-  background: url(../images/Preloader_2.gif) center no-repeat #fff;
+  background: url(http://www.majada.nl/wp-content/themes/Majada-website/images/Preloader_2.gif) center no-repeat #fff;
 }
 
 /*# sourceMappingURL=style.css.map */
