@@ -92,9 +92,9 @@
                         // wp_nav_menu( array('theme_location' => 'HeaderMenu') );
                     ?>
                     <a href="#" data-nav-section="home">Home</a>
-                    <a href="#" data-nav-section="mission">Wat doen wij</a>
-                    <a href="#" data-nav-section="services">Projecten</a>
-                    <a href="#" data-nav-section="team">Vacatures</a>
+                    <!-- <a href="#" data-nav-section="mission">Wat doen wij</a> -->
+                    <!-- <a href="#" data-nav-section="services">Projecten</a> -->
+                    <!-- <a href="#" data-nav-section="team">Wie zijn wij</a> -->
                     <a href="#" data-nav-section="contact" class="btn-menu">Contact</a>
                 </div>
             </div>

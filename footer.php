@@ -6,11 +6,11 @@
 					</div>
 					<div class="col-md-6">
 						<ul class="site-social">
-							<li><a href="#"><i class="icon-twitter"></i></a></li>
-							<li><a href="#"><i class="icon-facebook"></i></a></li>
-							<li><a href="#"><i class="icon-vine"></i></a></li>
-							<li><a href="#"><i class="icon-linkedin"></i></a></li>
-							<li><a href="#"><i class="icon-instagram"></i></a></li>
+							<!-- <li><a href="#"><i class="icon-twitter"></i></a></li> -->
+							<!-- <li><a href="#"><i class="icon-facebook"></i></a></li> -->
+							<!-- <li><a href="#"><i class="icon-vine"></i></a></li> -->
+							<li><a href="https://www.linkedin.com/company-beta/785322/" target="_blank"><i class="icon-linkedin"></i></a></li>
+							<!-- <li><a href="#"><i class="icon-instagram"></i></a></li> -->
 						</ul>
 					</div>
 				</div>
