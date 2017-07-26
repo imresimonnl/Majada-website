@@ -49,16 +49,16 @@
 			</div>
 			<div class="site-2col site-text">
 				<div class="site-grid">
-					<div class="site-grid-item" style="background-image: url(http://www.majada.nl/wp-content/themes/Majada-website/images/img_3.jpg);"></div>
-					<div class="site-grid-item" style="background-image: url(http://www.majada.nl/wp-content/themes/Majada-website/images/img_2.jpg);"></div>
-					<div class="site-grid-item" style="background-image: url(http://www.majada.nl/wp-content/themes/Majada-website/images/img_1.jpg);"></div>
-					<div class="site-grid-item" style="background-image: url(http://www.majada.nl/wp-content/themes/Majada-website/images/img_4.jpg);"></div>
+					<div class="site-grid-item" style="background-image: url(//www.majada.nl/wp-content/themes/Majada-website/images/img_3.jpg);"></div>
+					<div class="site-grid-item" style="background-image: url(//www.majada.nl/wp-content/themes/Majada-website/images/img_2.jpg);"></div>
+					<div class="site-grid-item" style="background-image: url(//www.majada.nl/wp-content/themes/Majada-website/images/img_1.jpg);"></div>
+					<div class="site-grid-item" style="background-image: url(//www.majada.nl/wp-content/themes/Majada-website/images/img_4.jpg);"></div>
 				</div>
 			</div>
 		</div> <!-- END site-about -->
 
 		<!-- <div id="site-services" data-section="services">
-			<div class="site-video"><a href="https://vimeo.com/channels/staffpicks/93951774" class="popup-vimeo"><i class="icon-play2"></i></a> <span>Lorem ipsum</span></div>
+			<div class="site-video"><a href="//vimeo.com/channels/staffpicks/93951774" class="popup-vimeo"><i class="icon-play2"></i></a> <span>Lorem ipsum</span></div>
 			<div class="container">
 				<div class="col-md-6 col-md-offset-3 text-center site-heading">
 					<h2>Lorem ipsum</h2>
@@ -116,7 +116,7 @@
 		</div>
 		
 		<div id="site-gallery">
-			<a href="http://www.majada.nl/wp-content/themes/Majada-website/images/img_3.jpg" class="site-item image-popup" style="background-image: url(http://www.majada.nl/wp-content/themes/Majada-website/images/img_3.jpg)">
+			<a href="//www.majada.nl/wp-content/themes/Majada-website/images/img_3.jpg" class="site-item image-popup" style="background-image: url(//www.majada.nl/wp-content/themes/Majada-website/images/img_3.jpg)">
 				<div class="site-overlay"></div>
 				<div class="site-copy">
 					<div class="site-copy-inner">
@@ -125,7 +125,7 @@
 					</div>
 				</div>
 			</a>
-			<a href="http://www.majada.nl/wp-content/themes/Majada-website/images/img_2.jpg" class="site-item image-popup" style="background-image: url(http://www.majada.nl/wp-content/themes/Majada-website/images/img_2.jpg)">
+			<a href="//www.majada.nl/wp-content/themes/Majada-website/images/img_2.jpg" class="site-item image-popup" style="background-image: url(//www.majada.nl/wp-content/themes/Majada-website/images/img_2.jpg)">
 				<div class="site-overlay"></div>
 				<div class="site-copy">
 					<div class="site-copy-inner">
@@ -134,7 +134,7 @@
 					</div>
 				</div>
 			</a>
-			<a href="http://www.majada.nl/wp-content/themes/Majada-website/images/img_1.jpg" class="site-item image-popup" style="background-image: url(http://www.majada.nl/wp-content/themes/Majada-website/images/img_1.jpg)">
+			<a href="//www.majada.nl/wp-content/themes/Majada-website/images/img_1.jpg" class="site-item image-popup" style="background-image: url(//www.majada.nl/wp-content/themes/Majada-website/images/img_1.jpg)">
 				<div class="site-overlay"></div>
 				<div class="site-copy">
 					<div class="site-copy-inner">
@@ -143,7 +143,7 @@
 					</div>
 				</div>
 			</a>
-			<a href="http://www.majada.nl/wp-content/themes/Majada-website/images/img_4.jpg" class="site-item image-popup" style="background-image: url(http://www.majada.nl/wp-content/themes/Majada-website/images/img_4.jpg)">
+			<a href="//www.majada.nl/wp-content/themes/Majada-website/images/img_4.jpg" class="site-item image-popup" style="background-image: url(//www.majada.nl/wp-content/themes/Majada-website/images/img_4.jpg)">
 				<div class="site-overlay"></div>
 				<div class="site-copy">
 					<div class="site-copy-inner">
@@ -152,7 +152,7 @@
 					</div>
 				</div>
 			</a>
-			<a href="http://www.majada.nl/wp-content/themes/Majada-website/images/img_4.jpg" class="site-item image-popup" style="background-image: url(http://www.majada.nl/wp-content/themes/Majada-website/images/img_4.jpg)">
+			<a href="//www.majada.nl/wp-content/themes/Majada-website/images/img_4.jpg" class="site-item image-popup" style="background-image: url(//www.majada.nl/wp-content/themes/Majada-website/images/img_4.jpg)">
 				<div class="site-overlay"></div>
 				<div class="site-copy">
 					<div class="site-copy-inner">
@@ -161,7 +161,7 @@
 					</div>
 				</div>
 			</a>
-			<a href="http://www.majada.nl/wp-content/themes/Majada-website/images/img_1.jpg" class="site-item image-popup" style="background-image: url(http://www.majada.nl/wp-content/themes/Majada-website/images/img_1.jpg)">
+			<a href="//www.majada.nl/wp-content/themes/Majada-website/images/img_1.jpg" class="site-item image-popup" style="background-image: url(//www.majada.nl/wp-content/themes/Majada-website/images/img_1.jpg)">
 				<div class="site-overlay"></div>
 				<div class="site-copy">
 					<div class="site-copy-inner">
@@ -170,7 +170,7 @@
 					</div>
 				</div>
 			</a>
-			<a href="http://www.majada.nl/wp-content/themes/Majada-website/images/img_2.jpg" class="site-item image-popup" style="background-image: url(http://www.majada.nl/wp-content/themes/Majada-website/images/img_2.jpg)">
+			<a href="//www.majada.nl/wp-content/themes/Majada-website/images/img_2.jpg" class="site-item image-popup" style="background-image: url(//www.majada.nl/wp-content/themes/Majada-website/images/img_2.jpg)">
 				<div class="site-overlay"></div>
 				<div class="site-copy">
 					<div class="site-copy-inner">
@@ -179,7 +179,7 @@
 					</div>
 				</div>
 			</a>
-			<a href="http://www.majada.nl/wp-content/themes/Majada-website/images/img_3.jpg" class="site-item image-popup" style="background-image: url(http://www.majada.nl/wp-content/themes/Majada-website/images/img_3.jpg)">
+			<a href="//www.majada.nl/wp-content/themes/Majada-website/images/img_3.jpg" class="site-item image-popup" style="background-image: url(//www.majada.nl/wp-content/themes/Majada-website/images/img_3.jpg)">
 				<div class="site-overlay"></div>
 				<div class="site-copy">
 					<div class="site-copy-inner">
@@ -200,7 +200,7 @@
 				</div>
 				<div class="col-md-4">
 					<div class="person">
-						<!-- <img src="http://www.majada.nl/wp-content/themes/Majada-website/images/img_2.jpg" alt="" class="img-responsive"> -->
+						<!-- <img src="//www.majada.nl/wp-content/themes/Majada-website/images/img_2.jpg" alt="" class="img-responsive"> -->
 						<div class="icon"><i class="icon-user" style="font-size: 180px"></i></div><br /> <br/>
 						<h4>Eva Petra Simon</h4>
 						<!-- <h4>Algemeen Directeur</h4> -->

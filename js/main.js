@@ -278,20 +278,20 @@
 	// Document on load.
 	$(function(){
 
-		fullHeight();
+		// fullHeight();
 		loaderPage();
-		Tabs();
-		gridAutoHeight();
+		// Tabs();
+		// gridAutoHeight();
 
 		// sliderMain();
-		// sliderSayings();
+		// // sliderSayings();
 		offcanvasMenu();
 		mainMenuSticky();
-		parallax();
+		// parallax();
 		burgerMenu();
 		scrolledWindow();
 		mobileMenuOutsideClick();
-		clickMenu();
+		// clickMenu();
 		navigationSection();
 		goToTop();
 
