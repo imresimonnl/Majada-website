@@ -275,6 +275,30 @@
 
 	};
 
+	var changeMenu = function() {
+	    if ( $('body').hasClass('home')) {
+
+	        $(window).scroll(function () {
+	        	var y = $('body').scrollTop();
+
+			    if (y > 150) {
+			    	$('.site-main-nav').removeClass('home site-main-nav__color--homepage');
+			        $('.site-main-nav').addClass('site-main-nav__bgcolor');
+			    } 
+
+			    else if (y < 149) {
+			    	$('.site-main-nav').removeClass('site-main-nav__bgcolor');
+			        $('.site-main-nav').addClass('home site-main-nav__color--homepage');   
+			    }
+			});
+	    } 
+
+	    else {
+	        $('.site-main-nav').addClass('site-main-nav__bgcolor');
+	    }
+	}
+
+
 	// Document on load.
 	$(function(){
 
@@ -294,6 +318,7 @@
 		// clickMenu();
 		navigationSection();
 		goToTop();
+		changeMenu();
 
 	});
 

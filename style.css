@@ -10,10 +10,15 @@ License URI: //www.gnu.org/licenses/gpl-2.0.html
 Text Domain: MajadaTheme
 */
 
+/* vars
+Orange: #e87900;
+Teal: #009e86;
+*/
+
 body {
   font-family: 'Open Sans', sans-serif;
-  /*font-family: 'Roboto', sans-serif;
-  font-size: 18px;*/
+  /*font-family: 'Roboto', sans-serif;*/
+  font-size: 15px;
   font-weight: 400;
   line-height: 1.8;
   color: #949494;
@@ -35,9 +40,11 @@ a:hover, a:focus, a:active {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   color: #000;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 p {
@@ -52,13 +59,10 @@ p {
   letter-spacing: 2px;
   text-transform: uppercase;
   font-weight: 300;
-  -webkit-border-radius: 100px;
-  -moz-border-radius: 100px;
-  -ms-border-radius: 100px;
-  border-radius: 100px;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
+  border-radius: 0;
 }
 .btn.btn-md {
   padding: 10px 20px !important;
@@ -72,12 +76,14 @@ p {
 }
 
 .btn-primary {
-  background: #009e86;
+  background: #e87900;
   color: #fff;
+  border: none;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  background: #e87900 !important;
+  background: #FFF !important;
+  color: #e87900;
 }
 
 .btn-primary.btn-outline {
@@ -177,7 +183,8 @@ p {
   transition: 0.3s;
 }
 .btn-outline:hover, .btn-outline:focus, .btn-outline:active {
-  box-shadow: none;
+    box-shadow: none;
+    background: #e87900 !important;
 }
 
 .form-control {
@@ -185,13 +192,18 @@ p {
   background: transparent;
   border: 2px solid rgba(0, 0, 0, 0.1);
   height: 54px;
-  font-size: 18px;
-  font-weight: 300;
+
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.8;
+  color: rgb(148, 148, 148);
 }
+
 .form-control:active, .form-control:focus {
   outline: none;
   box-shadow: none;
-  border-color: #69c2c8;
+  border-color: #009e86;
 }
 
 .site-page {
@@ -203,11 +215,81 @@ p {
 .content {
   padding: 100px 20px;
 }
-.basic-nav {
-  position: relative;
-  height: 70px;
-  width: 100%;
+
+.content .site-post-header {
+    width: 100%;
+    height: 300px;
+    background-size: cover !important;
 }
+
+.content h2 {
+    color: #009e86;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    position: relative;
+}
+
+.content img {
+    display: block;
+    width: 100vw;
+    height: 40vh;
+    object-fit: cover;
+}
+
+.content iframe {
+    width: 100%;
+    height: 40vh;
+}
+
+.content li {
+    position: relative;
+    left: -10px;
+    list-style-type: none;
+}
+
+.content li span {
+  color: rgb(180, 180, 180);
+}
+
+.content li:before {
+    content: "";
+    position: absolute;
+    left: -23px;
+    margin-top: 14px;
+    background: rgb(232, 121, 0);
+    height: 2px;
+    width: 12px;
+}
+
+.content .project-info h3 {
+  color: #e87900;
+}
+
+.content .project-info p {
+    margin: 0;
+}
+
+.content .project-info i {
+    position: relative;
+    left: 8px;
+    top: 2px;
+    color: #009e86;
+    margin-right: 10px;
+}
+
+.content .project-info a {
+    position: relative;
+    color: rgb(148, 148, 148);
+    text-decoration: underline;
+}
+
+.content .project-info a:hover {
+  color: #009e86;
+}
+
+
+
 #site-home {
   background-color: #333; 
   min-height: 500px;
@@ -224,9 +306,7 @@ p {
   z-index: 2;
 }
 #site-home .site-copy {
-  margin-top: 190px;
-  display: table;
-  width: 100%;
+  margin-top: 80px;
 }
 #site-home .site-copy-inner {
   display: table-cell;
@@ -234,14 +314,14 @@ p {
   vertical-align: middle;
 }
 
-#site-home .site-copy-inner h2 {
+#site-home .site-copy-inner h2, #site-home .site-copy-inner h1 {
   color: #fff;
   font-size: 35px;
-  line-height: 0.8;
+  line-height: 1.4;
   font-weight: 300;
 }
 
-#site-home .site-copy-inner h2 span {
+#site-home .site-copy-inner h2 span, #site-home .site-copy-inner h1 span {
   color: #fff;
   border-bottom:solid 2px #FFF;
 }
@@ -265,25 +345,48 @@ p {
 }
 
 .site-main-nav {
-  background-color: #FFF;
+  /*background-color: #FFF;*/
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 99999;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
-.site-main-nav.site-shadow {
+
+.site-main-nav__bgcolor {
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #FFF;
   -webkit-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.09);
   -moz-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.09);
   -ms-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.09);
   box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.09);
 }
+
+.site-main-nav__bgcolor svg {
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  fill: #009e86;
+}
+
+.site-main-nav__bgcolor li a {
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  color: #333 !important;
+}
+
 .site-main-nav .site-menu-1 {
   vertical-align: middle;
   float: right;
   line-height: 0;
   width: auto !important;
 }
-.site-main-nav .site-menu-1 a {
+.site-main-nav .site-menu-1 li {
   padding: 35px 0;
   margin-right: 30px;
   color: #333;
@@ -295,6 +398,19 @@ p {
   display: inline-block;
   zoom: 1;
   *display: inline;
+}
+
+.site-main-nav .site-menu-1 li a {
+  vertical-align: middle;
+  color: #FFF;
+}
+
+.site-main-nav .site-menu-1 .current_page_item a {
+  color: #333;
+}
+
+.site-main-nav__bgcolor .current_page_item a {
+  color: #009e86 !important;
 }
 
 .site-menu-1 .btn-menu {
@@ -319,12 +435,11 @@ p {
 
 .site-main-nav-logo {
   height: 40px;
-  margin-top: 14px;
+  margin-top: 21px;
+  margin-left: 20px;
+  fill: white;
 }
 
-.site-main-nav .site-menu-1 a {
-  vertical-align: middle;
-}
 .site-main-nav .site-logo {
   text-align: center;
   width: 19.33%;
@@ -341,6 +456,23 @@ p {
 .site-main-nav .site-menu-2 {
   text-align: left;
   width: 40.33%;
+}
+
+.site-main-header-logo {
+  height: 60px;
+  fill: #FFF;
+}
+
+@media screen and (min-width: 768px) {
+  .site-main-header-logo {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #site-home .site-copy {
+    margin-top: 170px;
+  }
 }
 
 .site-heading .heading {
@@ -725,10 +857,10 @@ p {
   content: "";
   width: 50px;
   height: 2px;
-  bottom: 0;
+  bottom: 5px;
   left: 50%;
   margin-left: -25px;
-  background: #cccccc;
+  background: #009e86;
 }
 .site-heading p {
   font-size: 18px;
@@ -800,11 +932,70 @@ p {
 }
 
 #site-gallery {
-  padding: 3.5em 0;
+  padding-bottom: 40px;
   clear: both;
   float: left;
   width: 100%;
 }
+
+#site-gallery .site-heading {
+  margin-top: 40px;
+}
+
+.site-news .site-cta {
+  background: none;
+}
+
+.site-news .site-cta-inner:after {
+  background: none
+}
+
+
+.site-cta {
+  padding: 40px;
+  clear: both;
+  background: url(//www.majada.nl/wp-content/themes/Majada-website/images/project-background.jpg) center center no-repeat;
+  background-size: cover;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+  .site-cta {
+    padding: 40px 0;
+  }
+}
+
+    
+
+.site-cta-inner:after {
+    content: "";
+    background: rgba(232, 121, 0, 0.7);
+    position: relative;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.site-cta-inner .btn {
+    position: relative;
+    z-index: 999;
+    background-color: #009e86;
+}
+
+.site-portfolio .site-cta:hover .btn-primary {
+  background: #FFF !important;
+  color: #009e86;
+}
+
+.site-news .site-cta:hover .btn-primary {
+  background: #e87900 !important;
+  color: white;
+}
+
 #site-gallery .site-item {
   display: block;
   position: relative;
@@ -815,18 +1006,19 @@ p {
   background-position: center center;
   height: 300px;
   float: left;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 @media screen and (max-width: 1200px) {
   #site-gallery .site-item {
-    height: 200px;
+    height: 150px;
+    width: 50%;
   }
 }
 @media screen and (max-width: 768px) {
   #site-gallery .site-item {
-    width: 50%;
+    width: 100%;
   }
 }
 @media screen and (max-width: 480px) {
@@ -849,91 +1041,152 @@ p {
   -o-transition: 0.5s;
   transition: 0.5s;
 }
+
+@media screen and (max-width: 768px) {
+  #site-gallery .site-item:nth-child(even) .site-overlay {
+    opacity: 0.7;
+    visibility: visible;
+  }
+
+  #site-gallery .site-item:nth-child(odd) .site-overlay {
+    background: #e87900;
+    opacity: 0.7;
+    visibility: visible;
+  }
+}
+
 #site-gallery .site-item .site-copy {
     z-index: 3;
     position: relative;
     height: 300px;
     width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
 }
+
+@media screen and (max-width: 768px) {
+  #site-gallery .site-item .site-copy {
+    background: none;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   #site-gallery .site-item .site-copy {
-    height: 200px;
+    height: 150px;
   }
 }
 #site-gallery .site-item .site-copy > .site-copy-inner {
     position: absolute;
     bottom: 0;
-    padding: 30px;
+    padding: 20px;
+    width: 100%;
 }
 @media screen and (max-width: 1200px) {
   #site-gallery .site-item .site-copy > .site-copy-inner {
-    height: 200px;
+    height: 150px;
   }
 }
-#site-gallery .site-item .site-copy > .site-copy-inner h2, #site-gallery .site-item .site-copy > .site-copy-inner h3 {
-  margin: 0;
-  padding: 0;
-  color: #fff;
-  /*opacity: 0;
-  visibility: hidden;*/
-  position: relative;
-}
+
 #site-gallery .site-item .site-copy > .site-copy-inner h2 {
+  color: #FFF;
   font-size: 20px;
-  margin-bottom: 10px;
+  margin-bottom: -60px;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
   position: relative;
+  font-weight: 500;
 }
+
+#site-gallery .site-item .site-copy > .site-copy-inner h2:before {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 2px;
+  bottom: -8px;
+  /*background: #009e86;*/
+  background: #FFF;
+}
+
 #site-gallery .site-item .site-copy > .site-copy-inner h3 {
-  font-weight: 200; 
+  color: #FFF;
+  font-weight: 300; 
   font-size: 16px;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
   position: relative;
   bottom: -10px;
+  opacity: 0;
+  visibility: hidden;
+  min-height: 30px;
 }
+
+@media screen and (max-width: 1200px) {
+  #site-gallery .site-item .site-copy > .site-copy-inner h3 {
+    opacity: 1;
+    visibility: visible;
+    bottom: -60px;
+    display: block;
+  }
+}
+
 #site-gallery .site-item:hover, #site-gallery .site-item:focus, #site-gallery .site-item:active {
-    
-  background-size: cover;
   text-decoration: none;
+  /*background-size: 120%;*/
 }
+
 #site-gallery .site-item:hover .site-overlay, #site-gallery .site-item:focus .site-overlay, #site-gallery .site-item:active .site-overlay {
-  opacity: .8;
+  opacity: .9;
   visibility: visible;
 }
+
+#site-gallery .site-item:hover .site-copy, #site-gallery .site-item:focus .site-copy, #site-gallery .site-item:active .site-copy {
+  background: none;
+}
+
 #site-gallery .site-item:hover .site-copy-inner h2, #site-gallery .site-item:hover .site-copy-inner h3, #site-gallery .site-item:focus .site-copy-inner h2, #site-gallery .site-item:focus .site-copy-inner h3, #site-gallery .site-item:active .site-copy-inner h2, #site-gallery .site-item:active .site-copy-inner h3 {
   opacity: 1;
   visibility: visible;
+  display: block;
 }
+
 #site-gallery .site-item:hover .site-copy-inner h2, #site-gallery .site-item:focus .site-copy-inner h2, #site-gallery .site-item:active .site-copy-inner h2 {
-  top: 0;
+  margin-bottom: 0px;
 }
+
 #site-gallery .site-item:hover .site-copy-inner h3, #site-gallery .site-item:focus .site-copy-inner h3, #site-gallery .site-item:active .site-copy-inner h3 {
   bottom: 0;
 }
 
 #site-contact {
-  padding: 7em 0;
+  clear: both;
 }
+
 @media screen and (max-width: 768px) {
   #site-contact {
     padding: 3em 0;
   }
 }
+
 #site-contact .form-control {
   border: none;
   box-shadow: none;
-  border-bottom: 1px solid #E8ECF1;
+  border: 2px solid #E8ECF1;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   -ms-border-radius: 0;
   border-radius: 0;
 }
+
+#site-contact img {
+  height: auto !important;
+}
+
 #site-contact .form-control:active, #site-contact .form-control:focus {
-  border-bottom: 1px solid #69c2c8;
+  border: 2px solid #009e86;
 }
 
 #site-footer {
@@ -942,19 +1195,41 @@ p {
   -webkit-box-shadow: inset 0px 10px 21px -15px rgba(0, 0, 0, 0.12);
   -moz-box-shadow: inset 0px 10px 21px -15px rgba(0, 0, 0, 0.12);
   box-shadow: inset 0px 10px 21px -15px rgba(0, 0, 0, 0.12);
+  clear: both;
 }
-@media screen and (max-width: 768px) {
+
+#site-footer .column {
+  padding-bottom: 40px;
+}
+
+#site-footer .column .site-main-footer-logo {
+  height: 50px;
+  fill: #009e86;
+}
+
+@media screen and (max-width: 1000px) {
   #site-footer {
-    padding: 3em 0;
+    padding: 3em 1em;
+  }
+
+  #site-footer .column {
+    width: 50%;
+    float: left;
   }
 }
+
+@media screen and (max-width: 500px) {
+
+  #site-footer .column {
+    width: 100%;
+    float: left;
+  }
+}
+
 #site-footer p:last-child {
   margin-bottom: 0;
 }
-#site-footer .site-social {
-  float: right;
-  text-align: left;
-}
+
 @media screen and (max-width: 768px) {
   #site-footer .site-social {
     float: left;
@@ -1027,30 +1302,29 @@ p {
   top: 0;
   bottom: 0;
   width: 275px;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.9) !important;
   padding: 0.75em 1.25em;
   -moz-transform: translateX(-275px);
   -webkit-transform: translateX(-275px);
   -ms-transform: translateX(-275px);
   -o-transform: translateX(-275px);
   transform: translateX(-275px);
-  -webkit-transition: 0.9s;
-  -o-transition: 0.9s;
-  transition: 0.9s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 #site-offcanvas a {
   display: block;
-  color: rgba(255, 255, 255, 0.4);
-  text-align: center;
-  padding: 7px 0;
+  color: #fff;
+  padding: 7px 7px;
 }
 #site-offcanvas a:hover, #site-offcanvas a:focus, #site-offcanvas a:active {
   outline: none;
   text-decoration: none;
-  color: #69c2c8;
+  color: #009e86;
 }
 #site-offcanvas a.active {
-  color: #69c2c8;
+  color: #009e86;
 }
 @media screen and (max-width: 768px) {
   #site-offcanvas {
@@ -1099,7 +1373,7 @@ p {
   text-decoration: none;
 }
 .site-nav-toggle.active i::before, .site-nav-toggle.active i::after {
-  background: #fff;
+  background: #009e86;
 }
 .site-nav-toggle:hover, .site-nav-toggle:focus, .site-nav-toggle:active {
   outline: none;
@@ -1107,24 +1381,23 @@ p {
 }
 .site-nav-toggle i {
   position: relative;
-  display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  *display: inline;
   width: 30px;
   height: 2px;
-  color: #fff;
+  color: rgb(51, 51, 51);
   font: bold 14px/.4 Helvetica;
   text-transform: uppercase;
   text-indent: -55px;
-  background: #fff;
+  background: #009e86;
   transition: all .2s ease-out;
+  left: 10px;
 }
 .site-nav-toggle i::before, .site-nav-toggle i::after {
   content: '';
   width: 30px;
   height: 2px;
-  background: #fff;
+  background: #009e86;
   position: absolute;
   left: 0;
   -webkit-transition: 0.2s;
@@ -1138,14 +1411,6 @@ p {
 
 .site-nav-toggle i::after {
   bottom: -7px;
-}
-
-.site-nav-toggle:hover i::before {
-  top: -10px;
-}
-
-.site-nav-toggle:hover i::after {
-  bottom: -10px;
 }
 
 .site-nav-toggle.active i {
@@ -1172,20 +1437,19 @@ p {
 
 .site-nav-toggle {
   position: fixed;
-  top: 20px;
-  left: 20px;
   z-index: 9999;
   display: block;
   margin: 0 auto;
   display: none;
   border-bottom: none !important;
-  background: rgba(0, 0, 0, 0.7);
   padding: 0px 10px 10px 10px;
   cursor: pointer;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  border-radius: 4px;
+  background: rgb(255, 255, 255);
+  width: 100%;
+  -webkit-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.20);
+  -moz-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.20);
+  -ms-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.20);
+  box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.20);
 }
 @media screen and (max-width: 768px) {
   .site-nav-toggle {
@@ -1216,7 +1480,8 @@ p {
   width: 100%;
   height: 100%;
   z-index: 9999;
-  background: url(//www.majada.nl/wp-content/themes/Majada-website/images/Preloader_2.gif) center no-repeat #fff;
+  background: url(//www.majada.nl/wp-content/themes/Majada-website/images/Preloader_2.svg) center no-repeat #fff;
+  background-size: 7%;
 }
 
 /*# sourceMappingURL=style.css.map */
